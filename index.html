@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Refaccionaria Peñaloza</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="Imagenes/Logo 2.2.png" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#info">Información</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Confianza en movimiento</h1>
+    <p>Tu mejor opción en refacciones y servicio automotriz</p>
+  </section>
+
+  <main>
+    <section id="info" class="seccion">
+      <h2>Sobre Nosotros</h2>
+      <p>Refaccionaria Peñaloza es una empresa con una larga trayectoria dedicada a la venta de piezas originales y genéricas de autos, especializada inicialmente en la marca Nissan.</p>
+      <p>Con el paso del tiempo y gracias a la confianza de nuestros clientes, hemos ampliado nuestra oferta con una línea multimarcas para brindar soluciones a más personas y más vehículos.</p>
+    </section>
+
+    <section id="servicios" class="seccion">
+      <h2>Servicios</h2>
+      <p>Contamos con un amplio catálogo de refacciones originales y genéricas. Además brindamos servicio de <strong>taller mecánico</strong>.</p>
+      <div class="carrusel">
+        <img src="Imagenes/Carru 1.JPG" class="slide active" />
+        <img src="Imagenes/Carru 2.JPG" class="slide" />
+        <img src="Imagenes/Carru 3.JPG" class="slide" />
+      </div>
+    </section>
+
+    <section id="testimonios" class="seccion">
+      <h2>Testimonios</h2>
+      <div class="testimonios-container" id="contenedorTestimonios">
+        <blockquote>
+          <p>Juan Pérez</p>
+          <footer>" Excelente atención y piezas de calidad. "</footer>
+        </blockquote>
+        <blockquote>
+          <p>Mariana López</p>
+          <footer>" Todo llegó a tiempo y con buena asesoría. "</footer>
+        </blockquote>
+      </div>
+
+      <h3>Comparte tu experiencia</h3>
+      <form id="formTestimonio">
+        <input type="text" id="nombreTestimonio" placeholder="Tu nombre" required />
+        <textarea id="mensajeTestimonio" placeholder="Escribe tu testimonio aquí" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="catalogo" class="seccion">
+      <h2>Catálogo</h2>
+      <input type="text" id="buscador" placeholder="Buscar refacción..." />
+      <div class="catalogo-grid" id="catalogoGrid">
+        <div class="item" data-nombre="Filtro de aceite">
+          <img src="Imagenes/What-is-the-Oil-Filters-Primary-Job_-1000x675-1.jpg" />
+          <h3>Filtro de Aceite</h3>
+          <p>$120 MXN</p>
+        </div>
+        <div class="item" data-nombre="Bujía NGK">
+          <img src="Imagenes/bujias.jpg" />
+          <h3>Bujía NGK</h3>
+          <p>$90 MXN</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion">
+      <h2>Ubicación</h2>
+      <p>Av.Tamaulipas #45 Col. Cuajimalpa.</p>
+      <p><a href= "https://maps.app.goo.gl/khh8VwQRZYAdZQYM7">Ver en Google Maps</a></p>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2smx!4v1750459796801!5m2!1sen!2smx!6m8!1m7!1sk1ukEl9yhuytZz078lcOnQ!2m2!1d19.35729414792898!2d-99.29570578103319!3f332.58862!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h3>Refaccionaria Peñaloza</h3>
+        <p>Av. Tamaulipas #45, Col. Cuajimalpa</p>
+        <p>Tel: 5580953974 </p>
+        <p>Email: malberto.zepeda</p>
+      </div>
+      <div class="footer-redes">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <p>&copy; 2025 Refaccionaria Peñaloza. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
